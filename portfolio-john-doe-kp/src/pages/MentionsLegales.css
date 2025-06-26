@@ -1,0 +1,39 @@
+/* MentionsLegales.css */
+
+hr {
+  width: 180px;
+  height: 4px;
+  background-color: #0dcaf0 ;
+  border: none;
+  margin: 0 auto 40px auto !important; /* Force la marge centrée */
+  opacity: 1 !important;
+  display: block; 
+}
+
+
+.accordion-button {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #d3e4ff;
+  color: #0dcaf0;
+}
+
+.accordion-body p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+
+.accordion-body a {
+  color: #0dcaf0;
+  text-decoration: underline;
+}
+
+.accordion-body a:hover {
+  color: #0d6efd ;
+  text-decoration: none;
+}
