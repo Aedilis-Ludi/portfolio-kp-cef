@@ -1,0 +1,77 @@
+.services-page {
+  background-color: white;
+  color: black;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.banner-image {
+  width: 100vw !important;
+  height: 300px;
+  object-fit: cover;
+  margin: 0;
+  border-radius: 0;
+  display: block;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: none !important;
+}
+
+
+.section-divider {
+  width: 180px;
+  height: 4px;
+  background-color: #1976d2;
+  border: none;
+  margin: 0 auto 40px;
+}
+
+/* Wrapper des cartes */
+.services-content-wrapper > .row {
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Colonnes avec largeur max et pas de marge */
+.services-content-wrapper > .row > .col {
+  max-width: 320px;
+  flex-grow: 1;
+  margin: 0;
+}
+
+/* Style des cartes */
+.service-card {
+  border-radius: 8px;
+  max-width: 320px;
+  margin: 0 auto;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background-color: white;
+}
+
+.service-card:hover {
+  background-color: #efefef;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon svg {
+  color: #1976d2;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+
+/* Responsive : centrage et largeur max en petit écran */
+@media (max-width: 768px) {
+  .services-content-wrapper > .row > .col {
+    max-width: 350px;
+  }
+}
