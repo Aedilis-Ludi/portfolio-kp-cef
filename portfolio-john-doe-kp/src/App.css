@@ -12,19 +12,15 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #6f42c1);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #0d6efd);
 }
 
 @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -34,9 +30,24 @@
 }
 
 .card {
-  padding: 2em;
+  padding: 2em; 
 }
 
 .read-the-docs {
-  color: #888;
+  color: #adb5bd;
+}
+
+.nav-link {
+  color: #fff;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #ffc107; /* Couleur au survol */
+}
+
+.nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
 }
