@@ -4,22 +4,15 @@
   height: 300px;
   object-fit: cover;
   display: block;
-  margin: 0; /* Pas de marge */
-  padding: 0;
   position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
 }
 
 /* Container principal */
 .portfolio {
-  background-color: white;
-  color: black;
+  background-color: #fff;
+  color: #000;
   min-height: 100vh;
   box-sizing: border-box;
-  margin: 0 auto; /* Centre horizontalement */
 }
 
 /* Titres centrés */
@@ -62,10 +55,11 @@
 .card {
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: white;
+  background-color: #fff;
   cursor: pointer;
   transition: background-color 0.3s, box-shadow 0.3s;
-  width: 500px;
+  max-width: 500px;  /* largeur max sur grand écran */
+  width: 100%;       /* largeur adaptative */
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -123,12 +117,38 @@
   border-top: 1px solid #e9ecef;
   padding: 0.5rem 1rem;
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-  .card-col {
+/* Responsive mobile */
+@media (max-width: 480px) {
+  .about-wrapper {
     max-width: 100%;
-    flex: 1 1 100%;
+    padding: 15px;
+    box-sizing: border-box; /* IMPORTANT */
+  }
+}
+
+/* Forcer la page Portfolio à prendre 100% largeur sur mobile/tablette */
+@media (max-width: 1023px) {
+  .portfolio-page {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+
+
+.container,
+.container-fluid {
+  padding-left: 0px !important;
+}
+
+
+/* Sur mobile et tablette, limiter la largeur des cards et centrer */
+@media (max-width: 1023px) {
+  .portfolio .cards-row {
+    justify-content: center; /* Centre horizontalement les cards */
   }
 
+  .portfolio .card-col {
+    max-width: 80%;           /* Limite la largeur des cartes */
+  }
 }

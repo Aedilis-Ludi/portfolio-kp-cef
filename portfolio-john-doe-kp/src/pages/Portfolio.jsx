@@ -64,7 +64,7 @@ const projects = [
 
 function Portfolio() {
   return (
-    <Container fluid className="portfolio">
+    <Container fluid className="portfolio portfolio-page">
       <img src={banner} alt="Bannière portfolio" className="banner" />
       <h2 className="title">Portfolio</h2>
       <p className="subtitle">Voici quelques-unes de mes réalisations.</p>

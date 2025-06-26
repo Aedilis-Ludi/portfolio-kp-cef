@@ -10,7 +10,7 @@ function Home() {
 
   // Récupération des données GitHub une seule fois au chargement //
   useEffect(() => {
-    fetch('https://github.com/Aedilis-Ludi/portfolio-kp-cef.git')
+    fetch('https://api.github.com/users/github-john-doe')
       .then(res => res.json())
       .then(data => setGithubData(data))
       .catch(err => console.error(err));

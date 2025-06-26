@@ -15,13 +15,13 @@ function Footer() {
             john.doe@gmail.com
           </address>
           <div className="social-icons">
-            <a href="https://github.com/Aedilis-Ludi/john-doe-portfolio.git" target="_blank" rel="nofollow noopener noreferrer" aria-label="GitHub">
+            <a href="https://github.com/Aedilis-Ludi/portfolio-kp-cef" target="_blank" rel="nofollow noopener noreferrer" aria-label="GitHub">
               <FaGithub />
             </a>
-            <a href="https://github.com/Aedilis-Ludi/john-doe-portfolio.git" target="_blank" rel="nofollow noopener noreferrer" aria-label="Twitter">
+            <a href="https://github.com/Aedilis-Ludi/portfolio-kp-cef" target="_blank" rel="nofollow noopener noreferrer" aria-label="Twitter">
               <FaTwitter />
             </a>
-            <a href="https://github.com/Aedilis-Ludi/john-doe-portfolio.git" target="_blank" rel="nofollow noopener noreferrer" aria-label="LinkedIn">
+            <a href="https://github.com/Aedilis-Ludi/portfolio-kp-cef" target="_blank" rel="nofollow noopener noreferrer" aria-label="LinkedIn">
               <FaLinkedin />
             </a>
           </div>

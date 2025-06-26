@@ -1,6 +1,6 @@
 import React from 'react';
 import { Accordion, Container } from 'react-bootstrap';
-import './MentionsLegales.css';
+import "./MentionsLegales.css";
 
 function MentionsLegales() {
   return (
